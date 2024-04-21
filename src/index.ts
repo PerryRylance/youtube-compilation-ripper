@@ -138,7 +138,7 @@ async function rip()
 			artist: escape(song.artist)
 		};
 
-		let command = `ffmpeg -i ${escaped.input} -ss ${start} -t ${length} -metadata artist=${escaped.artist} -metadata title=${escaped.title} ${escaped.output}`;
+		let command = `ffmpeg -i ${escaped.input} -ss ${start} -t ${length} -acodec copy -metadata artist=${escaped.artist} -metadata title=${escaped.title} ${escaped.output}`;
 
 		execSync(command);
 	}
