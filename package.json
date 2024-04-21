@@ -1,0 +1,26 @@
+{
+  "name": "youtube-compilation-ripper",
+  "version": "1.0.0",
+  "description": "Tool for ripping compilations of songs from YouTube with a playlist.",
+  "main": "src/index.ts",
+  "scripts": {
+    "rip": "tsx src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "any-shell-escape": "^0.1.1",
+    "cli-color": "^2.0.4",
+    "command-line-args": "^5.2.1",
+    "glob": "^10.3.12",
+    "hh-mm-ss": "^1.2.0",
+    "progress-estimator": "^0.3.1",
+    "sanitize-filename": "^1.6.3",
+    "tsx": "^4.7.2",
+    "youtube-dl-exec": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7"
+  }
+}
